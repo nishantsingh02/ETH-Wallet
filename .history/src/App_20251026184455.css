@@ -174,26 +174,3 @@ body {
   padding: 10px;
   border-radius: 8px;
 }
-
-/* --- New Disconnect Button Style --- */
-/* Add this to the end of your App.css */
-
-.disconnect-btn {
-  background-color: transparent; /* No background */
-  color: #a0a0a0; /* Gray text, less important */
-  border: 1px solid #3a3e44; /* Same border as inputs */
-  border-radius: 12px;
-  padding: 12px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  width: 100%;
-  margin-top: 16px; /* Add space above the button */
-}
-
-.disconnect-btn:hover {
-  background-color: #2c2f36; /* Light dark bg on hover */
-  color: #f0f0f0; /* Brighter text on hover */
-  border-color: #4a4e54;
-}

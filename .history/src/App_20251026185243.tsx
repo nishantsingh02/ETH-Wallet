@@ -2,7 +2,6 @@ import {
   createConfig,
   useAccount,
   useBalance,
-  useDisconnect,
   useSendTransaction,
   WagmiProvider,
 } from "wagmi";
@@ -41,7 +40,7 @@ function App() {
 function MyAddress() {
   const { address, isConnected } = useAccount();
   const { data: balance } = useBalance({ address });
-  const { disconnect } = useDisconnect();
+  const { dis}
 
   if (!isConnected) {
     return null;
@@ -58,10 +57,6 @@ function MyAddress() {
           ? `${balance.formatted} ${balance.symbol}`
           : "Loading..."}
       </div>
-
-      <button onClick={() => disconnect()} className="disconnect-btn">
-        Disconnect
-      </button>
     </div>
   );
 }

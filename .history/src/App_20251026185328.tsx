@@ -59,8 +59,8 @@ function MyAddress() {
           : "Loading..."}
       </div>
 
-      <button onClick={() => disconnect()} className="disconnect-btn">
-        Disconnect
+      <button>
+        
       </button>
     </div>
   );

@@ -58,10 +58,6 @@ function MyAddress() {
           ? `${balance.formatted} ${balance.symbol}`
           : "Loading..."}
       </div>
-
-      <button onClick={() => disconnect()} className="disconnect-btn">
-        Disconnect
-      </button>
     </div>
   );
 }
